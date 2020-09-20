@@ -78,7 +78,11 @@ ul li:hover a span:nth-child(2) {
   display: none;
 }
 .intro {
-  background-color: #3b5635;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/hiking.png");
+  background-position: center;
+  background-size: cover;
+  /*background-color: #3b5635;*/
   min-height: calc(100% - 98px);
   align-items: center;
   justify-content: center;
@@ -267,7 +271,6 @@ button:hover {
     right: 1em;
     cursor: pointer;
   }
-  /*begin burger menu transitions*/
   .burger div {
     width: 25px;
     height: 3px;
@@ -293,7 +296,7 @@ button:hover {
     opacity: 0;
   }
   .intro {
-    background-color:#364e31
+    background-color: #364e31;
     min-height: calc(100% - 125px);
   }
   .introText {
