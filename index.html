@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="navigation flex">
+      <a id="nammy-logo" href="#"><img src="images/nntransparent.png" /></a>
+      <ul id="header-nav" class="hidden">
+        <li>
+          <a href="#">
+            <span>Home</span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Portfolio</span>
+            <span>Portfolio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>About Me</span>
+            <span>About Me</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Contact</span>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </header>
+    <div class="intro flex flex-col">
+      <div class="introText flex flex-col">
+        <span class="h3 introduction">
+          Hi, I’m <strong>Nammy</strong>. I’m a
+          <strong>UIUX Designer</strong> based in Washington, DC. I care about
+          <span style="font-style: italic">impactful</span> and
+          <span style="font-style: italic">meaningful</span> design. I see
+          problem solving as a vehicle for
+          <span style="font-style: italic">growth</span> and
+          <span style="font-style: italic">transformation</span>.
+        </span>
+      </div>
+      <div id="scrolltowork" class="flexscroll smoothscroll">
+        <a href="#work-section">
+          <i class="fas fa-chevron-down bounce"></i>
+          <div id="scrollarrow">SCROLL</div>
+        </a>
+      </div>
+    </div>
+    <div>
+      <a name="work-section"></a>
+      <h1 class="latest-work">Latest Work</h1>
+      <section class="work">
+        <div class="image-and-text">
+          <img
+            class="responsive"
+            src="images/pphome.png"
+            alt="Photo of Plant Parenthood Mockup"
+          />
+          <div class="container-text-right">
+            <h2>Plant Parenthood</h2>
+            <p>
+              Designing a mobile app for finding plants compatible with
+              lifestyle and providing plant care info
+            </p>
+            <div class="center">
+              <button>VIEW CASE STUDY</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="image-and-text2">
+          <div class="img-container">
+            <img
+              class="responsive imgCenter"
+              src="images/doedhome.png"
+              alt="Photo of DoEd RWD Mockup"
+            />
+          </div>
+          <div class="container-text-left">
+            <h2>Department of Education RWD</h2>
+            <p>
+              Redesigning with a focus on Improving ED’s information
+              architecture across web and mobile screens
+            </p>
+            <div class="center">
+              <button>VIEW CASE STUDY</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="image-and-text">
+          <img
+            class="responsive"
+            src="images/esihome.png"
+            alt="Photo of ESI RWD Mockup"
+          />
+
+          <div class="container-text-right">
+            <h2>Endangered Species Intl. RWD</h2>
+            <p>
+              Evaluating the usability of ESI’s outdated website and redesigning
+              for increased awareness of its mission
+            </p>
+            <div class="center">
+              <button>VIEW CASE STUDY</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--back to top button-->
+    <div class="back-to-top"><i class="fas fa-angle-double-up"></i></div>
+    <!--end back top-->
+    <footer class="flex flex-column align-center" style="margin-top: 50px">
+      <p>Let's Connect!</p>
+      <div class="socials flex">
+        <a href="#">
+          <i class="fab fa-linkedin-in round"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-pinterest-p round"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-basketball-ball round"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram round"></i>
+        </a>
+      </div>
+      <p>© 2020</p>
+    </footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</html>

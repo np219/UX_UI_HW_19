@@ -1,0 +1,368 @@
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.navigation,
+.work,
+.latest-work {
+  width: 70%;
+}
+
+.navigation,
+.work {
+  margin: 0 auto;
+}
+
+.navigation {
+  align-items: center;
+}
+nav {
+  padding: 1%;
+}
+ul {
+  margin: 0;
+  display: flex;
+  padding-left: 20px;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 10px;
+}
+ul li a {
+  position: relative;
+  height: 20px;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0px 15px;
+}
+ul li a span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: 0.5s;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul li a span:nth-child(1) {
+  color: black;
+}
+ul li a span:nth-child(2) {
+  color: #3b5635;
+}
+ul li:hover a span:nth-child(1) {
+  transform: translateY(-100%);
+}
+ul li:hover a span:nth-child(2) {
+  transform: translateY(-100%);
+}
+
+.burger {
+  display: none;
+}
+.intro {
+  background-color: #3b5635;
+  min-height: calc(100% - 98px);
+  align-items: center;
+  justify-content: center;
+}
+.introText,
+#scrolltowork a {
+  font-size: 60px;
+}
+.introText {
+  flex: 1;
+  justify-content: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+.introduction {
+  font-weight: normal;
+}
+
+#scrolltowork {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+#scrolltowork a {
+  color: #c88e47;
+  text-decoration: none;
+}
+#scrollarrow {
+  font-size: 16px;
+}
+
+.latest-work {
+  font-size: 24px;
+  color: #364e31;
+  font-family: "Times New Roman", Times, serif;
+  margin: 70px auto 45px;
+  text-align: center;
+}
+h2 {
+  font-size: 22px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  min-height: 100vh;
+  outline: none;
+}
+button {
+  margin: 0 10px;
+  border: none;
+  background-color: #4a6445;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+button:hover {
+  background-color: #364e31;
+  -webkit-transition: ease 0.1s;
+  transition: ease 0.1s;
+}
+
+.work {
+  margin: 0 auto 25px;
+  padding: 1rem 2rem;
+  position: relative;
+  height: 400px;
+}
+
+.image-and-text,
+.image-and-text2,
+.container-text-right,
+.container-text-left,
+.img-container {
+  position: relative;
+}
+
+.image-and-text {
+  left: 125px;
+}
+.image-and-text2 {
+  right: 125px;
+}
+
+.container-text-right,
+.container-text-left {
+  background: #ffb893;
+  padding: 1rem;
+  width: 366px;
+  -webkit-box-shadow: 7px 10px 29px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 10px 29px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 10px 29px -10px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.container-text-right {
+  float: right;
+  right: 250px;
+  top: 68.75px;
+  border-radius: 10px;
+}
+.container-text-left {
+  float: left;
+  left: 250px;
+  top: 68.75px;
+  border-radius: 10px;
+}
+
+.img-container {
+  width: 684px;
+  background-color: #c88e47;
+  text-align: center;
+  float: right;
+}
+.imgCenter {
+  padding: 15px;
+}
+.flex-column {
+  flex-direction: column;
+}
+.socials {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.round {
+  color: #c88e47;
+  margin: 0px 10px;
+  padding: 12px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border: 2px solid #364e31;
+}
+.align-center {
+  align-items: center;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+  background: #c88e47;
+  color: white;
+  border: 2px solid #364e31;
+  z-index: 1000;
+}
+.back-to-top:hover {
+  cursor: pointer;
+  background-color: #364e31;
+}
+@media only screen and (max-width: 600px) {
+  #nammy-logo {
+    margin-left: 2em;
+  }
+  /*body {
+    overflow-x: hidden;
+  }*/
+  .navigation {
+    margin: 0;
+    width: 100%;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    right: 1em;
+    cursor: pointer;
+  }
+  /*begin burger menu transitions*/
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  #header-nav {
+    position: absolute;
+    padding: 0;
+    height: auto;
+    top: 105px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  #header-nav li {
+    opacity: 0;
+  }
+  .intro {
+    background-color:#364e31
+    min-height: calc(100% - 125px);
+  }
+  .introText {
+    font-size: 20px;
+    text-align: left;
+    width: 70%;
+  }
+  .latest-work {
+    margin: 30px auto 30px;
+  }
+  .work {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin: 0;
+  }
+  .image-and-text {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-and-text2 {
+    right: 0;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  .container-text-right,
+  .container-text-left {
+    width: auto;
+  }
+  h2,
+  p {
+    margin-left: 20px;
+  }
+
+  .container-text-right {
+    float: none;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+  }
+  .container-text-left {
+    float: none;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+  }
+  .container-text-right,
+  .container-text-left {
+    box-shadow: none;
+  }
+  .img-container {
+    float: none;
+    position: unset;
+    width: 100%;
+    height: auto;
+  }
+  .img-container img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  #scrolltowork {
+    display: none;
+  }
+}
